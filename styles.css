@@ -122,7 +122,8 @@ a {
     transition: all 0.2s;
 }
 .navigation li:hover {
-    border-bottom: 1px solid #6bbdf4;
+    text-decoration: underline;
+    text-decoration-color: #6bbdf4;
     color: #6bbdf4;
 }
 .navigation li .attorneys {
