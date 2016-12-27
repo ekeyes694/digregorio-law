@@ -10,22 +10,22 @@ body {
 Header
 -------------------------------*/
 .social {
-
+    width: 93%;
     overflow: auto;
-    padding: 1.5em;
+    padding: 1.1em;
 }
 .name {
     font-family: 'Times New Roman';
     float: left;
-    width: 31%;
     font-size: 36px;
+    margin-left: 1em;
 }
 .name ul{
     list-style: none;
     color: #6bbdf4;
 }
 .name-title{
-    font-size: 45px;
+    font-size: 52px;
     color: #fff;
 }
 .icons {
@@ -50,7 +50,7 @@ Header
 
 .contact-info li{
     list-style: none;
-    margin-right: -4px;
+    margin-right: -13px;
     position: relative;
     padding: 5px 20px;
     -webkit-transition: all 0.2s;
@@ -61,10 +61,10 @@ Header
 }
 .contact-info {
     color: #fff;
-    font-size: 17px;
-    width: 22%;
+    font-size: 13px;
+    width: 18%;
     float: right;
-    margin-top: 1em;
+    margin-top: 2em;
     font-family: serif;
 }
 
@@ -124,12 +124,13 @@ a {
 .navigation li:hover {
     text-decoration: underline;
     text-decoration-color: #6bbdf4;
+    text
     color: #6bbdf4;
 }
 .navigation li .attorneys {
     padding: 0;
     position: absolute;
-    top: 29px;
+    top: 22px;
     left: 0;
     width: 150px;
     -webkit-box-shadow: none;
@@ -163,7 +164,7 @@ a {
 .navigation li .contact-options {
     padding: 0;
     position: absolute;
-    top: 29px;
+    top: 22px;
     left: 0;
     width: 150px;
     -webkit-box-shadow: none;
