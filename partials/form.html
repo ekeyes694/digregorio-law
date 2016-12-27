@@ -1,0 +1,31 @@
+
+<div class="main">
+
+<?php
+if (isset($_GET['sent']) === true) {
+echo '<span>Thanks for contacting us!</span>';
+} else {
+if (empty($errors) === false) {
+echo '<ul style="list-style: none;">';
+foreach($errors as $error) {
+echo '<li>', $error, '</li>';
+}
+echo '</ul>'
+}
+?>
+    <form action="mailer.php" method="post">
+        <p>Name:</p>
+        <input type="text" name="name" id="name" <?php if (isset($_POST['name']) === true) { echo 'value="', strip_tags($_POST['name']), '"'; } ?>
+        <p>Phone:</p>
+        <input type="text" name="phone" id="phone" <?php if (isset($_POST['phone']) === true) { echo 'value="', strip_tags($_POST['phone']), '"'; } ?>
+        <p>E-mail:</p>
+        <input type="text" name="email" id ="email" <?php if (isset($_POST['email']) === true) { echo 'value="', strip_tags($_POST['email']), '"'; } ?>
+        <p>Message:</p>
+        <textarea name="message" id="message" <?php if (isset($_POST['message']) === true) { echo strip_tags($_POST['message']); } ?></textarea></p>
+    <input class="send" type="submit" value="Submit">
+    </form>
+<?php
+}
+?>
+</div>
+
