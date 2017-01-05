@@ -98,26 +98,34 @@ Header
 /*-----------------------------
 Navigation
 /*-----------------------------*/
-hr {
-    margin-top: 0em;
-    width: 37%;
-}
 .navigation {
     text-align: left;
     display: inline;
-    padding: 15px 4px 17px 0;
     list-style: none;
 }
 a {
     text-decoration: none;
-    color: #eee9dc;
+    color: #fff;
 }
 .navigation li {
     font: bold 12px/18px sans-serif;
     display: inline-block;
     margin-right: -4px;
     position: relative;
-    padding: 5px 20px;
+    padding: 7px 100px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.attorneys li, .contact-options li {
+    font: bold 12px/18px sans-serif;
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+    padding: 5px 10px;
     cursor: pointer;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
@@ -127,15 +135,15 @@ a {
 }
 .navigation li:hover {
     text-decoration: underline;
+    background-color: dimgray;
     text-decoration-color: #6bbdf4;
-    text
     color: #6bbdf4;
 }
 .navigation li .attorneys {
     padding: 0;
     position: absolute;
     top: 22px;
-    left: 0;
+    left: 98px;
     width: 150px;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -143,6 +151,7 @@ a {
     display: none;
     opacity: 0;
     visibility: hidden;
+    z-index: 1;
     -webkit-transiton: opacity 0.2s;
     -moz-transition: opacity 0.2s;
     -ms-transition: opacity 0.2s;
@@ -155,7 +164,7 @@ a {
     text-shadow: 0 -1px 0 #000;
 }
 .navigation li .attorneys li:hover {
-    background: #666;
+    background: dimgray;
     color: #6bbdf4;
 }
 .navigation li:hover .attorneys {
@@ -169,8 +178,9 @@ a {
     padding: 0;
     position: absolute;
     top: 22px;
-    left: 0;
+    left: 98px;
     width: 150px;
+    z-index: 1;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -189,7 +199,7 @@ a {
     text-shadow: 0 -1px 0 #000;
 }
 .navigation li .contact-options li:hover {
-    background: #666;
+    background: dimgray;
     color: #6bbdf4;
 }
 .navigation li:hover .contact-options {
@@ -200,26 +210,22 @@ a {
 }
 
 .navlinks {
-    margin-left: 29em;
+    margin-left: 8em;
     margin-top: 1em;
-    margin-bottom: .5em;
-    width: 100%;
+    text-align: center;
+    width: 82.2%;
+    background-color: gray;
 }
 
 
-.title2{
-    margin-left: 2em;
-    color: #6bbdf4;
-}
 /* -------------------------------------
 * timeline
 * ------------------------------------- */
 #timeline-body{
     width: 80%;
-    background-color: #f9f9e5;
+    background-color: #fff;
     color: #6bbdf4;
     padding: 1em;
-    margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
@@ -239,6 +245,11 @@ a {
 }
 #timeline p {
     margin: 0 0 15px;
+}
+
+.title2{
+    margin-left: 2em;
+    color: #6bbdf4;
 }
 
 .date {
@@ -288,7 +299,7 @@ a {
     margin-top: -20px;
 }
 .content:after {
-    border-right-color: #f9f9e5;
+    border-right-color: #fff;
     border-width: 17px;
     top: 50%;
     margin-top: -17px;
@@ -339,11 +350,12 @@ label {
 /*--------------------------------------
 home
 /*--------------------------------------*/
-.main{
+.main1{
     width: 80%;
     background-color: #fff;
     color: #fcfdff;
-    margin-top: 2em;
+    padding: 1em;
+    padding-bottom: 35em;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
@@ -352,7 +364,10 @@ home
     box-shadow: 1px 4px 44px -5px rgba(0,0,0,0.88);
 }
 .sections {
-    clear: both;
+    background-color: #fff;
+    width: 91.6%;
+    color: #fff;
+    margin-left: 3em;
 }
 .about{
     background-color: #6bbdf4;
@@ -369,43 +384,44 @@ home
     float: left;
     width: 24.44%;
     padding: 2.9em;
-    padding-bottom: 9em;
+    padding-bottom: 13em;
     text-align: center;
-    margin-bottom: 5em;
 }
 
 
 .about-image{
-    background-image: url(./images/about-image.jpg);
-    background-position: center bottom;
+    background-image: url(./images/rocks.jpeg);
+    background-position: left;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 33.938rem;
+    height: 34.938rem;
+    margin-bottom: 5em;
     overflow: auto;
 }
-.quote1 {
-    margin-bottom: 1em;
-    margin-left: -4em;
-}
 
-.quote2 {
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.quote3 {
-    margin-top: 1em;
-    margin-left: 3em;
-}
-
-.quotes {
+.quote {
     z-index: 1;
+    width: 59%;
     color: #6bbdf4;
-    margin-left: 41em;
-    margin-top: 9em;
-    font-size: 19px;
+    margin-left: 13em;
+    margin-top: 6em;
+    font-size: 33px;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
+}
+.line1{
+    text-indent: 12.7em;
+    line-height: .5em;
+}
+.line2{
+    text-indent: 4em;
+    line-height: .5em;
+}
+.line3{
+    line-height: .5em;
+}
+.subtext{
+    margin-left: 17.5em;
+    font-size: 24px;
 }
 
 .fa-balance-scale, .fa-users, .fa-gavel{
@@ -415,11 +431,10 @@ home
 jen and amy
 -----------------------------------------*/
 .main2 {
-    padding: 3em;
     width: 80%;
     background-color: #fff;
     color: #fcfdff;
-    margin-top: 2em;
+    padding: 1em;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
@@ -451,6 +466,18 @@ jen and amy
 /*--------------------------------------
 form
 ----------------------------------------*/
+.main{
+    width: 80%;
+    background-color: #fff;
+    color: #fcfdff;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    -webkit-box-shadow: 1px 4px 44px -5px rgba(0,0,0,0.88);
+    -moz-box-shadow: 1px 4px 44px -5px rgba(0,0,0,0.88);
+    box-shadow: 1px 4px 44px -5px rgba(0,0,0,0.88);
+}
 form {
     color: #666;
     padding: 2em;
