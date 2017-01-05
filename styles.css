@@ -112,7 +112,7 @@ a {
     display: inline-block;
     margin-right: -4px;
     position: relative;
-    padding: 7px 100px;
+    padding: 7px 92.2px;
     cursor: pointer;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
@@ -210,10 +210,10 @@ a {
 }
 
 .navlinks {
-    margin-left: 8em;
+    margin-left: 7.11em;
     margin-top: 1em;
     text-align: center;
-    width: 82.2%;
+    width: 82.5%;
     background-color: gray;
 }
 
@@ -365,9 +365,9 @@ home
 }
 .sections {
     background-color: #fff;
-    width: 91.6%;
+    width: 100.6%;
     color: #fff;
-    margin-left: 3em;
+    margin-left: -2.8em;
 }
 .about{
     background-color: #6bbdf4;
@@ -384,7 +384,7 @@ home
     float: left;
     width: 24.44%;
     padding: 2.9em;
-    padding-bottom: 13em;
+    padding-bottom: 11em;
     text-align: center;
 }
 
@@ -402,9 +402,9 @@ home
     z-index: 1;
     width: 59%;
     color: #6bbdf4;
-    margin-left: 13em;
+    margin-left: 12em;
     margin-top: 6em;
-    font-size: 33px;
+    font-size: 31px;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
 }
@@ -421,7 +421,7 @@ home
 }
 .subtext{
     margin-left: 17.5em;
-    font-size: 24px;
+    font-size: 21px;
 }
 
 .fa-balance-scale, .fa-users, .fa-gavel{
