@@ -840,7 +840,7 @@ map
         margin-left: 21em;
     }
     /******services******************/
-    #timeline {
+    #timeline-body {
         width: 93%;
     }
     #timeline p {
@@ -849,5 +849,46 @@ map
     /******form and map**************/
     .main {
         width: 93%;
+    }
+}
+@media screen and (min-width 1200px) {
+    /*****nav*************************/
+    .navlinks {
+        margin-left: 1.8em;
+        width: 95.58%;
+    }
+    .navigation li .attorneys {
+        left: 50px;
+    }
+    .navigation li .contact-options {
+        left: 50px;
+    }
+    .option {
+        padding: 6px 14px;
+    }
+    /******home**********************/
+    .main1 {
+        padding-bottom: 25em;
+    }
+    .quote {
+        margin-left: 23em;
+        font-size: 26px;
+    }
+    .subtext {
+        margin-left: 13.6;
+    }
+    .sections {
+        width: 101.6%;
+        font-size: 14px;
+        margin-left: -0.6em;
+    }
+    .about, .goal, .approach {
+        width: 28.4%;
+        font-size: 14px;
+        padding-bottom: 11em;
+    }
+    /*******jen and amy**************/
+    .jen-info, .amy-info {
+        width: 62%;
     }
 }
