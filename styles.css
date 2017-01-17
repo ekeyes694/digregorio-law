@@ -798,33 +798,41 @@ map
     }
 }
 @media screen and (min-width: 1024px) {
-    /******Home********************/
-    .main1{
-        width: 93%;
-        padding-bottom: 30em;
-    }
-    .name {
-        margin-left: 0em;
-    }
+    /*******nav**********************/
     .navlinks {
-        margin-left: 1.3em;
-        width: 96.1%
+        margin-left: 1.8em;
+        width: 95.58%;
     }
-    .navigation li {
-        padding: 7px 68.2px;
+    .navigation li .attorneys {
+        left: 50px;
     }
-    .quote{
-        margin-left: 13em;
-        font-size: 29px;
+    .navigation li .contact-options {
+        left: 50px;
+    }
+    .option {
+        padding: 6px 14px;
+    }
+    /******Home********************/
+    .main1 {
+        width: 93%;
+        padding-bottom: 25em;
+    }
+    .quote {
+        margin-left: 23em;
+        font-size: 26px;
+    }
+    .subtext {
+        margin-left: 13.6;
     }
     .sections {
-        width: 107.6%;
+        width: 101.6%;
         font-size: 14px;
-        margin-left: 0.6em;
+        margin-left: -0.6em;
     }
     .about, .goal, .approach {
-        width: 22.44%;
-        padding-bottom: 9em;
+        width: 28.4%;
+        font-size: 14px;
+        padding-bottom: 11em;
     }
     /******jen and amy**************/
     .main2 {
@@ -837,7 +845,7 @@ map
         margin-left: 3em;
     }
     .jen-info, .amy-info {
-        margin-left: 21em;
+        width: 62%;
     }
     /******services******************/
     #timeline-body {
@@ -851,7 +859,7 @@ map
         width: 93%;
     }
 }
-@media screen and (min-width 1200px) {
+/*@media screen and (min-width 1200px) {
     /*****nav*************************/
     .navlinks {
         margin-left: 1.8em;
@@ -891,4 +899,4 @@ map
     .jen-info, .amy-info {
         width: 62%;
     }
-}
+}*/
