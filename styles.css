@@ -861,7 +861,7 @@ map
 }
 /*@media screen and (min-width 1200px) {
     /*****nav*************************/
-    .navlinks {
+   /* .navlinks {
         margin-left: 1.8em;
         width: 95.58%;
     }
@@ -873,9 +873,9 @@ map
     }
     .option {
         padding: 6px 14px;
-    }
+    }*/
     /******home**********************/
-    .main1 {
+    /*.main1 {
         padding-bottom: 25em;
     }
     .quote {
@@ -896,7 +896,7 @@ map
         padding-bottom: 11em;
     }
     /*******jen and amy**************/
-    .jen-info, .amy-info {
+    /*.jen-info, .amy-info {
         width: 62%;
     }
 }*/
