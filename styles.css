@@ -796,13 +796,17 @@ map
     /*.main {
         width: 90%;
     }
-}
+}*/
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     /*******nav**********************/
-   /* .navlinks {
-        margin-left: 2em;
-        width: 93.3%;
+    .navlinks {
+        margin-left: 3.5em;
+        width: 84.5%;
     }
+    .navigation li {
+        padding: 7px 35.2px;
+    }
+}
     /******Home********************/
     /*.main1 {
         padding-bottom: 26em;
