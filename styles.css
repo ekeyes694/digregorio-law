@@ -496,7 +496,7 @@ map
 /* -------------------------------------
 * Responsive
 * ------------------------------------- */
-/*@media only screen and (min-width: 320px) {
+/*@media only screen and (max-width:480px) {
     /******header************************/
    /* .social {
         width: 87%;
@@ -711,7 +711,7 @@ map
         width: 76%;
     }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width:481px) and (max-width:768) {
     /*******header***********************/
     /*.social {
         width: 91%;
@@ -797,7 +797,7 @@ map
         width: 90%;
     }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     /*******nav**********************/
    /* .navlinks {
         margin-left: 2em;
@@ -840,22 +840,25 @@ map
     .radio:checked ~ .content {
         max-height: 238px;
     }
-}
-/*@media screen and (min-width 1200px) {
+}*/
+@media screen and (min-width 1025px) and (max-width: 1200px) {
     /*****nav*************************/
-   /* .navlinks {
-        margin-left: 1.8em;
-        width: 95.58%;
+    .navlinks {
+        margin-left: 5.1em;
+        width: 83.3%;
+    }
+    .navigation li {
+        padding: 7px 46.2px;
     }
     .navigation li .attorneys {
-        left: 50px;
+        top: 24px;
+        left: 45px;
     }
     .navigation li .contact-options {
-        left: 50px;
+        top: 24px;
+        left: 45px;
     }
-    .option {
-        padding: 6px 14px;
-    }*/
+}
     /******home**********************/
     /*.main1 {
         padding-bottom: 25em;
@@ -881,4 +884,5 @@ map
     /*.jen-info, .amy-info {
         width: 62%;
     }
+@media only screen and (min-width: 1201px;) {}
 }*/
