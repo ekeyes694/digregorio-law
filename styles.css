@@ -791,7 +791,6 @@ map
     .radio:checked ~ .content {
         max-height: 324px;
     }
-
     /******form and map*************/
     .main {
         width: 90%;
@@ -806,7 +805,6 @@ map
     /******Home********************/
     .main1 {
         padding-bottom: 26em;
-
     }
     .quote {
         margin-left: 12em;
