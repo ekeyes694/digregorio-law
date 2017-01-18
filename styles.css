@@ -797,6 +797,18 @@ map
         width: 90%;
     }
 }*/
+@media only screen and (min-width: 320px) {
+    .navlinks {
+        width: 89.5%;
+        margin-left: 1em;
+    }
+}
+@media only screen and (min-width: 480px) {
+    .navlinks {
+        width: 86.4%;
+        margin-left: 2.11em;
+    }
+}
 @media only screen and (min-width: 768px) {
     /*******nav**********************/
     .navlinks {
@@ -805,6 +817,18 @@ map
     }
     .navigation li {
         padding: 7px 29.2px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .navlinks {
+        margin-left: 5.6em;
+        width: 83.2%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .navlinks {
+        margin-left: 6em;
+        width: 83%;
     }
 }
     /******Home********************/
