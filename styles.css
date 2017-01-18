@@ -492,12 +492,13 @@ map
     height: 400px;
     margin-bottom: 15px;
 }
+/*
 /* -------------------------------------
 * Responsive
 * ------------------------------------- */
-@media only screen and (min-width: 320px) {
+/*@media only screen and (min-width: 320px) {
     /******header************************/
-    .social {
+   /* .social {
         width: 87%;
     }
     .name {
@@ -522,7 +523,7 @@ map
         margin-left: 4.6em;
     }
     /*******nav**************************/
-    .navlinks {
+   /* .navlinks {
         width: 86%;
     }
     .home-link {
@@ -539,7 +540,7 @@ map
         text-align: center;
     }
     /******home**************************/
-    .main1 {
+   /* .main1 {
         width: 76%;
         padding-bottom: 1em;
     }
@@ -561,7 +562,7 @@ map
         font-size: 12px;
     }
     /*******jen and amy******************/
-    .main2 {
+   /* .main2 {
         width: 76%;
     }
     .title2 {
@@ -580,7 +581,7 @@ map
         width: 90%;
     }
     /*******services*********************/
-    #timeline-body{
+   /* #timeline-body{
         width: 76%;
         background-color: #fff;
         color: #93a8e2;
@@ -706,13 +707,13 @@ map
         transition: color 0.3s linear 0.3s;
     }
     /******form and map******************/
-    .main {
+    /*.main {
         width: 76%;
     }
 }
 @media only screen and (min-width: 768px) {
     /*******header***********************/
-    .social {
+    /*.social {
         width: 91%;
     }
     .contact-info {
@@ -727,7 +728,7 @@ map
         font-size: 35px;
     }
     /******home************************/
-    .main1 {
+    /*.main1 {
         width: 90%;
         padding-bottom: 21em;
     }
@@ -752,7 +753,7 @@ map
         font-size: 12px;
     }
     /*******nav************************/
-    .navlinks {
+    /*.navlinks {
         margin-left: 1.5em;
         width: 94%;
     }
@@ -768,7 +769,7 @@ map
         left: 63px;
     }
     /*******jen and amy****************/
-    .main2 {
+   /* .main2 {
         width 90%;
     }
     .jen, .amy {
@@ -782,7 +783,7 @@ map
         margin-left: 20em;
     }
     /*******services*******************/
-    #timeline-body {
+    /*#timeline-body {
         width: 90%;
     }
     .radio:checked ~ .content p {
@@ -792,18 +793,18 @@ map
         max-height: 324px;
     }
     /******form and map*************/
-    .main {
+    /*.main {
         width: 90%;
     }
 }
 @media only screen and (min-width: 1024px) {
     /*******nav**********************/
-    .navlinks {
+   /* .navlinks {
         margin-left: 2em;
         width: 93.3%;
     }
     /******Home********************/
-    .main1 {
+    /*.main1 {
         padding-bottom: 26em;
     }
     .quote {
@@ -822,7 +823,7 @@ map
         padding-bottom: 10em;
     }
     /******jen and amy**************/
-    .attorney-name {
+   /* .attorney-name {
         margin-left: 2.5em;
     }
     .jen, .amy {
@@ -833,7 +834,7 @@ map
         margin-left: 19em;
     }
     /******services******************/
-    .radio:checked ~ .content p {
+   /* .radio:checked ~ .content p {
         max-height: 238px;
     }
     .radio:checked ~ .content {
