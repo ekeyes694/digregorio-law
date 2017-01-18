@@ -800,8 +800,8 @@ map
 @media only screen and (min-width: 768px) {
     /*******nav**********************/
     .navlinks {
-        margin-left: 3.42em;
-        width: 84.5%;
+        margin-left: 4em;
+        width: 84%;
     }
     .navigation li {
         padding: 7px 29.2px;
@@ -845,9 +845,9 @@ map
         max-height: 238px;
     }
 }*/
-@media screen and (min-width 1025px) and (max-width: 1200px) {
+/*@media screen and (min-width 1025px) and (max-width: 1200px) {
     /*****nav*************************/
-    .navlinks {
+    /*.navlinks {
         margin-left: 5.1em;
         width: 83.3%;
     }
