@@ -495,7 +495,7 @@ map
 /* -------------------------------------
 * Responsive
 * ------------------------------------- */
-@media screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) {
     /******header************************/
     .social {
         width: 87%;
@@ -710,7 +710,7 @@ map
         width: 76%;
     }
 }
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     /*******header***********************/
     .social {
         width: 91%;
@@ -797,7 +797,7 @@ map
         width: 90%;
     }
 }
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
     /*******nav**********************/
     .navlinks {
         margin-left: 5.8em;
