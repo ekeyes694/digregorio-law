@@ -495,7 +495,7 @@ map
 /* -------------------------------------
 * Responsive
 * ------------------------------------- */
-@media screen and (min-width 320px) {
+@media screen and (min-width: 320px) {
     /******header************************/
     .social {
         width: 87%;
@@ -710,7 +710,7 @@ map
         width: 76%;
     }
 }
-@media screen and (min-width 768px) {
+@media screen and (min-width: 768px) {
     /*******header***********************/
     .social {
         width: 91%;
@@ -797,47 +797,33 @@ map
         width: 90%;
     }
 }
-@media screen and (min-width 1024px) {
+@media screen and (min-width: 1024px) {
     /*******nav**********************/
     .navlinks {
-        margin-left: 1.8em;
-        width: 95.58%;
-    }
-    .navigation li .attorneys {
-        left: 50px;
-    }
-    .navigation li .contact-options {
-        left: 50px;
-    }
-    .option {
-        padding: 6px 14px;
+        margin-left: 5.8em;
+        width: 83%;
     }
     /******Home********************/
     .main1 {
-        width: 93%;
-        padding-bottom: 25em;
+        padding-bottom: 26em;
+        }
     }
     .quote {
-        margin-left: 23em;
-        font-size: 26px;
+        margin-left: 12em;
+        font-size: 27px;
     }
     .subtext {
-        margin-left: 13.6;
+        margin-left: 14.5em;;
     }
     .sections {
-        width: 101.6%;
-        font-size: 14px;
-        margin-left: -0.6em;
+        margin-left: 0.5em;
     }
     .about, .goal, .approach {
-        width: 28.4%;
-        font-size: 14px;
-        padding-bottom: 11em;
+        width: 25.44%;
+        padding: 2.3em;
+        padding-bottom: 10em;
     }
     /******jen and amy**************/
-    .main2 {
-        width: 93%;
-    }
     .attorney-name {
         margin-left: 2.5em;
     }
@@ -846,17 +832,14 @@ map
     }
     .jen-info, .amy-info {
         width: 62%;
+        margin-left: 19em;
     }
     /******services******************/
-    #timeline-body {
-        width: 93%;
+    .radio:checked ~ .content p {
+        max-height: 238px;
     }
-    #timeline p {
-        font-size: 13px;
-    }
-    /******form and map**************/
-    .main {
-        width: 93%;
+    .radio:checked ~ .content {
+        max-height: 238px;
     }
 }
 /*@media screen and (min-width 1200px) {
