@@ -822,7 +822,7 @@ map
         margin-left: -2.5em;
     }
     .main1 {
-        padding: none;
+        padding: 0em;
         padding-bottom: 61em;
     }
     .about-image {
@@ -834,6 +834,44 @@ map
     .about, .goal, .approach {
         width: 77.44%;
         padding-bottom: 0em;
+    }
+    .attorney-name {
+        margin-left: 1.5em;
+    }
+    .jen, .amy {
+        width: 150px;
+        height: 150px;
+        margin-left: 3em;
+    }
+    .jen-info, .amy-info {
+        width: 82%;
+        margin-left: 1em;
+    }
+    .title2 {
+        margin-left: 1.2em;
+    }
+    .circle {
+        top: 52%;
+        left: -85px;
+        width: 4px;
+        height: 4px;
+        border: 3px solid #595b5b;
+    }
+    label {
+        margin-left: -3em;
+    }
+    .radio:checked ~ .content {
+        max-height: 519px;
+        width: 119%;
+        margin-left: -5em;
+        margin-right: -1em;
+    }
+    .radio:checked ~.content p {
+        width: 94%;
+        max-height: 519px;
+    }
+    #timeline p {
+        font-size: 11px;
     }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
