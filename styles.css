@@ -699,7 +699,7 @@ map
         border-color: #595b5b;
         margin-right: 20px;
         transform: translateX(20px);
-        transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
+        /transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
     }
     .radio:checked ~ .content p {
         max-height: 611px;
@@ -798,9 +798,42 @@ map
     }
 }*/
 @media only screen and (min-width: 320px) and (max-width: 479px) {
+    .social {
+        width: 67%;
+    }
+    .name {
+        font-size: 16px;
+        margin-left: 2.5em;
+    }
+    .name-title {
+        font-size: 31px;
+
+    }
+    .contact-info {
+        width: 74%;
+        margin-top: 0em;
+        margin-right: 1em;
+    }
     .navlinks {
-        width: 89.4%;
-        margin-left: 1em;
+        width: 89.5%;
+        margin-left: 1.1em;
+    }
+    .home-link {
+        margin-left: -2.5em;
+    }
+    .main1 {
+        padding: none;
+        padding-bottom: 61em;
+    }
+    .about-image {
+        display: none;
+    }
+    .sections {
+        margin-left: -1em;
+    }
+    .about, .goal, .approach {
+        width: 77.44%;
+        padding-bottom: 0em;
     }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -828,7 +861,7 @@ map
 @media only screen and (min-width: 1200px) {
     .navlinks {
         margin-left: 6.9em;
-        width: 82.5%;
+        width: 82.55%;
     }
 }
     /******Home********************/
