@@ -574,12 +574,6 @@ map
         font-size: 11px;
     }
 }
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    .navlinks {
-        width: 86.4%;
-        margin-left: 2.1em;
-    }
-}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .social {
         width: 91%;
@@ -652,6 +646,9 @@ map
     .navlinks {
         margin-left: 5.7em;
         width: 83%;
+    }
+    .navigation li {
+        padding: 7px 66.2px;
     }
     .main1 {
         padding-bottom: 18em;
