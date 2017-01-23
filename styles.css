@@ -639,6 +639,9 @@ map
     .social {
         width: 96%;
     }
+    .name {
+        margin-left: 0em;
+    }
     .contact-info {
         width: 21%;
         margin-top: 1em;
@@ -650,6 +653,16 @@ map
     .navigation li {
         padding: 7px 66.2px;
     }
+    .navigation li .attorneys {
+        top: 24px;
+        left: 0px;
+        width: 196px;
+    }
+    .navigation li .contact-options{
+        top: 24px;
+        left: 0px;
+        width: 205px;
+    }
     .main1 {
         padding-bottom: 18em;
     }
@@ -658,9 +671,11 @@ map
     }
     .quote {
         font-size: 20px;
+        margin-left: 21em;
+        width: 48%;
     }
     .subtext {
-        margin-left: 15.5em;
+       font-size: 15px;
     }
     .sections {
         width: 180.6%;
@@ -670,6 +685,21 @@ map
         font-size: 12px;
         padding: 1.9em;
         padding-bottom: 5em;
+    }
+    .attorney-name {
+        margin-left: 2.5em;
+    }
+    .jen, .amy {
+        margin-left: 2.5em;
+    }
+    .jen-info, .amy-info {
+        margin-left: 19em;
+    }
+    .radio:checked ~ .content {
+        max-height: 242px;
+    }
+    .radio:checked ~ .content p {
+        max-height: 242px;
     }
 }
 @media only screen and (min-width: 1199px) and (max-width: 1205px) {
