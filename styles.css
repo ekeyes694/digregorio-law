@@ -676,6 +676,7 @@ map
     }
     .subtext {
        font-size: 15px;
+       margin-left: 16em;
     }
     .sections {
         width: 180.6%;
