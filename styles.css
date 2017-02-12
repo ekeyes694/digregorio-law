@@ -142,9 +142,10 @@ a {
 .navigation li .attorneys {
     padding: 0;
     position: absolute;
-    top: 22px;
-    left: 98px;
-    width: 150px;
+    top: 23px;
+    left: 0px;
+    width: 248px;
+    text-align: center;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -177,9 +178,10 @@ a {
 .navigation li .contact-options {
     padding: 0;
     position: absolute;
-    top: 22px;
-    left: 98px;
-    width: 150px;
+    top: 23px;
+    left: 0px;
+    width: 248px;
+    text-align: center;
     z-index: 1;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -210,10 +212,10 @@ a {
 }
 
 .navlinks {
-    margin-left: 7.1em;
+    margin-left: 8em;
     margin-top: 1em;
     text-align: center;
-    width: 82.4%;
+    width: 82.2%;
     background-color: gray;
 }
 
@@ -355,7 +357,7 @@ home
     background-color: #fff;
     color: #fcfdff;
     padding: 1em;
-    padding-bottom: 35em;
+    padding-bottom: 29em;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
@@ -365,9 +367,9 @@ home
 }
 .sections {
     background-color: #fff;
-    width: 100.6%;
+    width: 103%;
     color: #fff;
-    margin-left: -.1em;
+    margin-left: 1.4em;
 }
 .about{
     background-color: #93a8e2;
@@ -382,19 +384,20 @@ home
 }
 .about, .goal, .approach{
     float: left;
-    width: 24.44%;
-    padding: 2.9em;
+    width: 26%;
+    padding: 1.9em;
     padding-bottom: 11em;
     text-align: center;
 }
 
 
 .about-image{
-    background-image: url(./images/rocks.jpeg);
+    background-image: url(./images/stones.jpeg);
     background-position: left;
     background-repeat: no-repeat;
-    height: 34.938rem;
+    height: 25.938rem;
     margin-bottom: 1em;
+    margin-left: 3em;
     overflow: auto;
 }
 
@@ -703,7 +706,7 @@ map
         max-height: 242px;
     }
 }
-@media only screen and (min-width: 1199px) and (max-width: 1205px) {
+/**@media only screen and (min-width: 1199px) and (max-width: 1205px) {
     .navlinks {
         margin-left: 2.99em;
         width: 92.44%;
