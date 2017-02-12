@@ -10,10 +10,6 @@ app.config(['$routeProvider', function ($routeProvider) {
         controller: 'chargesController'
 
     })
-        .when('/amy', {
-        templateUrl: 'partials/amy.html',
-        controller: 'earningsController'
-    })
         .when('/services', {
         templateUrl: 'partials/services.html',
         controller: 'earningsController'
