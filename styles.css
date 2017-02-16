@@ -590,7 +590,8 @@ map
 }
 @media only screen and (min-width: 359px) and (max-width: 766px) {
     .main1 {
-        width: 89.2%;
+        width: 85.1%;
+        margin-left: 2.1em;
     }
 }
 @media only screen and (min-width: 767px) and (max-width: 1022px) {
