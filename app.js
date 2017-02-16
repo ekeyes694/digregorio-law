@@ -46,16 +46,16 @@ app.controller('mapController', ['$scope', function ($scope) {
     $scope.map = {
         control: {},
         center: {
-            latitude: 42.091338,
-            longitude: -70.708145
+            latitude: 42.10574380000001,
+            longitude: -70.74849940000001
         },
         zoom: 14
     };
 
     $scope.marker = {
         center: {
-            latitude: 42.091338,
-            longitude: -70.708145
+            latitude: 42.10574380000001,
+            longitude: -70.74849940000001
         }
     };
 

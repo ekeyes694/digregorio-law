@@ -180,7 +180,7 @@ a {
     position: absolute;
     top: 23px;
     left: 0px;
-    width: 248px;
+    width: 257px;
     text-align: center;
     z-index: 1;
     -webkit-box-shadow: none;
@@ -406,7 +406,7 @@ home
     width: 59%;
     color: #93a8e2;
     margin-left: 12em;
-    margin-top: 6em;
+    margin-top: 4em;
     font-size: 31px;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
@@ -502,11 +502,11 @@ map
 
 @media only screen and (min-width: 319px) and (max-width: 479px) {
     .social {
-        width: 67%;
+        width: 69%;
     }
     .name {
         font-size: 16px;
-        margin-left: 2.5em;
+        text-align: center;
     }
     .name-title {
         font-size: 31px;
@@ -514,25 +514,36 @@ map
     }
     .contact-info {
         width: 74%;
+        text-align: center;
         margin-top: 0em;
-        margin-right: 1em;
+        margin-right: 2em;
     }
     .navlinks {
-        width: 89.5%;
+        width: 90%;
         margin-left: 1.1em;
+    }
+    .navigation li {
+        padding: 5px 91.2px;
+    }
+    .navigation li .attorneys {
+        width: 256px;
+    }
+    .navigation li .contact-options {
+        width: 256px;
     }
     .home-link {
         margin-left: -2.5em;
     }
     .main1 {
         padding: 0em;
-        padding-bottom: 61em;
+        padding-bottom: 58em;
     }
     .about-image {
         display: none;
     }
     .sections {
         margin-left: -1em;
+        width: 107%
     }
     .about, .goal, .approach {
         width: 77.44%;
