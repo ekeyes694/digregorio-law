@@ -5,6 +5,14 @@ app.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'partials/home.html',
         controller: 'detailsController'
     })
+        .when('/focus', {
+        templateUrl: 'partials/focus.html',
+        controller: 'chargesController'
+    })
+        .when('/team', {
+        templateUrl: 'partials/team.html',
+        controller: 'chargesController'
+    })
         .when('/jen', {
         templateUrl: 'partials/jen.html',
         controller: 'chargesController'
@@ -14,13 +22,13 @@ app.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'partials/services.html',
         controller: 'earningsController'
     })
+        .when('/approach', {
+        templateUrl: 'partials/approach.html',
+        controller: 'serviceController'
+    })
         .when('/form', {
         templateUrl: 'partials/form.html',
         controller: 'formController'
-    })
-        .when('/map', {
-        templateUrl: 'partials/map.html',
-        controller: 'mapController'
     })
         .otherwise({
         redirectTo: '/home'
@@ -28,7 +36,7 @@ app.config(['$routeProvider', function ($routeProvider) {
 
 }]);
 
-app.controller('navCtrl', function ($scope, $location) {
+app.controller('navCtrl', ['$scope', function ($scope, $location) {
     $scope.isActive = function (viewLocation) {
         return viewLocation === $location.path();
     };
@@ -40,7 +48,16 @@ app.controller('navCtrl', function ($scope, $location) {
             return 'inactive';
         }
     };
-});
+    
+    $scope.show = false;
+    $scope.showMenu = function () {
+        if ($scope.myButton) {
+            $scope.show = true;
+        } else($scope.close = function () {
+            $scope.show = false;
+        });
+};
+}]);
 
 app.controller('mapController', ['$scope', function ($scope) {
     $scope.map = {
