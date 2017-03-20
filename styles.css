@@ -6,6 +6,21 @@ body {
     background-image: url(./images/Flannel.jpeg);
 }
 
+.mobile-menu {
+    display: none;
+}
+
+.menu {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+
+.fa bars {
+    color: #fff;
+}
 /*-----------------------------
 Header
 -------------------------------*/
@@ -120,19 +135,6 @@ a {
     -o-transition: all 0.2s;
     transition: all 0.2s;
 }
-.attorneys li, .contact-options li {
-    font: bold 12px/18px sans-serif;
-    display: inline-block;
-    margin-right: -4px;
-    position: relative;
-    padding: 5px 10px;
-    cursor: pointer;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-}
 .navigation li:hover {
     text-decoration: underline;
     background-color: dimgray;
@@ -174,43 +176,6 @@ a {
     color: #93a8e2;
     visibility: visible;
 }
-
-.navigation li .contact-options {
-    padding: 0;
-    position: absolute;
-    top: 23px;
-    left: 0px;
-    width: 257px;
-    text-align: center;
-    z-index: 1;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transiton: opacity 0.2s;
-    -moz-transition: opacity 0.2s;
-    -ms-transition: opacity 0.2s;
-    -o-transition: opacity 0.2s;
-    -transition: opacity 0.2s;
-}
-.navigation li .contact-options li {
-    background: #555;
-    display: block;
-    text-shadow: 0 -1px 0 #000;
-}
-.navigation li .contact-options li:hover {
-    background: dimgray;
-    color: #93a8e2;
-}
-.navigation li:hover .contact-options {
-    display: block;
-    opacity: 1;
-    color: #93a8e2;
-    visibility: visible;
-}
-
 .navlinks {
     margin-left: 8em;
     margin-top: 1em;
@@ -337,18 +302,29 @@ label {
     background: #93a8e2;
 }
 .radio:checked ~ .content {
-    max-height: 201px;
+    max-height: 213px;
     border-color: #595b5b;
     margin-right: 20px;
     transform: translateX(20px);
     transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }
 .radio:checked ~ .content p {
-    max-height: 200px;
+    max-height: 210px;
     color: #595b5b;
     transition: color 0.3s linear 0.3s;
 }
 
+.service-info {
+    color: #666;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.our-approach {
+    color: #93a8e2;
+    margin-left: 4.5em;
+}
 /*--------------------------------------
 home
 /*--------------------------------------*/
@@ -431,7 +407,7 @@ home
     color: #fff;
 }
 /*--------------------------------------
-jen and amy
+jen
 -----------------------------------------*/
 .main2 {
     width: 80%;
@@ -445,15 +421,8 @@ jen and amy
     -moz-box-shadow: 1px 4px 44px -5px rgba(0,0,0,0.88);
     box-shadow: 1px 4px 44px -5px rgba(0,0,0,0.88);
 }
-.jen-info, .amy-info {
-    color: #666;
-    width: 57%;
-    margin-left: 24em;
-    margin-right: auto;
-    padding: 1em;
-}
 
-.jen, .amy {
+.jen {
     float: left;
     width: 215px;
     height: 215px;
@@ -461,11 +430,42 @@ jen and amy
     padding: 1em;
 }
 
-.attorney-name {
-    color: #93a8e2;
-    margin-left: 6em;
-    margin-top: 2em;
+.team-info {
+    color: #666;
 }
+.sidemenu {
+    float: left;
+    width: 22%;
+    font-size: 17px;
+    margin-top: 5.5em;
+    margin-left: 2em;
+    padding-bottom: 13em;
+    border-right: thin solid #93a8e2;
+}
+
+.side-options {
+   list-style: none;
+    padding: 1em;    
+}
+
+.side-options li {
+    padding: 1em;
+    color: #93a8e2;
+}
+
+.side-options li:hover {
+   text-decoration: underline;
+}
+
+.focus-titles {
+    color: #93a8e2;
+}
+.info {
+    width: 70%;
+    margin-left: 21em;
+}
+
+
 /*--------------------------------------
 form
 ----------------------------------------*/
@@ -500,7 +500,7 @@ map
 * Responsive
 * ------------------------------------- */
 
-@media only screen and (min-width: 319px) and (max-width: 479px) {
+@media only screen and (min-width: 319px) and (max-width: 358px) {
     .social {
         width: 69%;
     }
@@ -525,12 +525,6 @@ map
     .navigation li {
         padding: 5px 91.2px;
     }
-    .navigation li .attorneys {
-        width: 256px;
-    }
-    .navigation li .contact-options {
-        width: 256px;
-    }
     .home-link {
         margin-left: -2.5em;
     }
@@ -552,12 +546,12 @@ map
     .attorney-name {
         margin-left: 1.5em;
     }
-    .jen, .amy {
+    .jen {
         width: 150px;
         height: 150px;
         margin-left: 3em;
     }
-    .jen-info, .amy-info {
+    .jen-info {
         width: 82%;
         margin-left: 1em;
     }
@@ -589,10 +583,107 @@ map
     }
 }
 @media only screen and (min-width: 359px) and (max-width: 766px) {
-    .main1 {
-        width: 85.1%;
-        margin-left: 2.1em;
+   .social {
+        width: 90%;
     }
+    .mobile-menu {
+        display: inline;
+    }
+    .menu-overlay {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.2em;
+        padding-bottom: 1em;
+    }
+    .navlinks-mobile {
+       background-color: gray;
+       list-style: none;
+       color: #fff;
+       width: 100%;
+       font-size: 45px;
+       padding-top: 1em;
+       margin-top: 0em;
+       height: 100%;
+       left: 0;
+       top: 0;
+       position: fixed;
+       z-index: 1;
+       overflow-x: hidden;
+       transition: 0.5s;
+    }
+    .name {
+        font-size: 23px;
+        margin-left: 0em;
+    }
+    .name-title {
+        font-size: 38px;
+    }
+    .contact-info {
+        width: 87%;
+        margin-right: 2.5em;
+        margin-bottom: 1em;
+        margin-top: 0em;
+    }
+    .navlinks {
+        display: none;
+    }
+    .navigation li {
+        padding: 7px 29.2px;
+    }
+    .main1 {
+        width: 100%;
+        margin-bottom: 0em;
+        padding-bottom: 0em;
+        padding: 0em;
+        overflow-x: hidden;
+    }
+    .about-image {
+        height: 20.938rem;
+    }
+    .quote {
+        width: 47%;
+        margin-left: 21em;
+        font-size: 15px;
+    }
+    .subtext {
+        margin-left: 9.5em;
+        font-size: 15px;
+    }
+    .sections {
+        width: 100%;
+        margin-left: 0em;
+    }
+    .about, .goal, .approach {
+        width: 100%;
+        font-size: 10px;
+        padding: 0.9em;
+        padding-bottom: 2em;
+    }
+    .main2 {
+        width: 100%;
+        margin-bottom: 0em;
+    }
+    .attorney-name {
+        margin-left: 2.5em;
+    }
+    .title2 {
+        margin-left: 3em;
+    }
+    .jen {
+        margin-left: 2.5em;
+    }
+    .jen-info {
+        width: 66%;
+        margin-left: 2em;
+    }
+    .radio:checked ~ .content {
+        max-height: 360px;
+    }
+    .radio:checked ~ .content p{
+        max-height: 360px;
+    }
+}
 }
 @media only screen and (min-width: 767px) and (max-width: 1022px) {
     .social {
@@ -642,10 +733,10 @@ map
     .attorney-name {
         margin-left: 2.5em;
     }
-    .jen, .amy {
+    .jen {
         margin-left: 2.5em;
     }
-    .jen-info, .amy-info {
+    .jen-info {
         margin-left: 16em;
     }
     .radio:checked ~ .content {
@@ -672,16 +763,6 @@ map
     }
     .navigation li {
         padding: 7px 66.2px;
-    }
-    .navigation li .attorneys {
-        top: 24px;
-        left: 0px;
-        width: 196px;
-    }
-    .navigation li .contact-options{
-        top: 24px;
-        left: 0px;
-        width: 205px;
     }
     .main1 {
         padding-bottom: 18em;
@@ -710,10 +791,10 @@ map
     .attorney-name {
         margin-left: 2.5em;
     }
-    .jen, .amy {
+    .jen {
         margin-left: 2.5em;
     }
-    .jen-info, .amy-info {
+    .jen-info {
         margin-left: 19em;
     }
     .radio:checked ~ .content {
@@ -759,7 +840,7 @@ map
         font-size: 17px;
         padding-bottom: 3em;
     }
-    .jen-info, .amy-info {
+    .jen-info {
         width: 66%;
         margin-left: 18em;
     }
