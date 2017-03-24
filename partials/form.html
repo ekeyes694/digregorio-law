@@ -1,18 +1,8 @@
 
 <div class="main">
 
-<?php
-if (isset($_GET['sent']) === true) {
-echo '<span>Thanks for contacting us!</span>';
-} else {
-if (empty($errors) === false) {
-echo '<ul style="list-style: none;">';
-foreach($errors as $error) {
-echo '<li>', $error, '</li>';
-}
-echo '</ul>'
-}
-?>
+<h1 class="title2">Contact Us</h1>
+
     <form action="mailer.php" method="post">
         <p>Name:</p>
         <input type="text" name="name" id="name" <?php if (isset($_POST['name']) === true) { echo 'value="', strip_tags($_POST['name']), '"'; } ?>
@@ -22,10 +12,29 @@ echo '</ul>'
         <input type="text" name="email" id ="email" <?php if (isset($_POST['email']) === true) { echo 'value="', strip_tags($_POST['email']), '"'; } ?>
         <p>Message:</p>
         <textarea name="message" id="message" <?php if (isset($_POST['message']) === true) { echo strip_tags($_POST['message']); } ?></textarea></p>
-    <input class="send" type="submit" value="Submit">
+        <input class="send" type="submit" value="Submit">
     </form>
-<?php
-}
-?>
-</div>
 
+
+<div class="contact-us">
+  
+    <h1 class="contact-titles">Our Location</h1>
+    
+
+    <p class="location-info">As of August of 2014, we relocated our offices to Suite M of the professional offices at 769 Plain Street (which is Route 139) in Marshfield.  Our new home is peaceful and private with ample off-street parking.  From Route 3, take Exit 12 then proceed east on Route 139.  You will pass through a traffic light at the entrance to The Christmas Tree Shop.  With Starbucks later on your left, take a right onto Enterprise Drive at the traffic light then turn right immediately into our parking lot.  If you reach Roche Brothers or Marshfield High School, you have travelled a bit too far.  
+    </p>
+    
+     <div class="contact-info2">
+        <ul class="nav nav-pills nav-stacked">
+            <li>769 Plain Street, Suite M, Marshfield, MA 02050</li>
+            <li class="number"><i class="fa fa-phone fa-1x fa-fw" aria-hidden="true"></i>781.834.6656</li>
+            <li class="number"><i class="fa fa-fax fa-1x fa-fw" aria-hidden="true"></i>781.780.5663</li>
+        </ul>
+    </div>
+    
+    <a href="https://www.google.com/maps/place/769+Plain+St+m,+Marshfield,+MA+02050/@42.1057438,-70.7506934,17z/data=!3m1!4b1!4m5!3m4!1s0x89e4a11dae4b1f5f:0x661b44abc98fc7ce!8m2!3d42.1057438!4d-70.7484994" target="_blank"><google-map control="map.control" center="map.center" zoom="map.zoom" options="draggable">
+        <marker coords="marker.center"></marker>
+        </google-map></a>
+    
+   </div>
+</div>
