@@ -28,7 +28,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     })
         .when('/form', {
         templateUrl: 'partials/form.html',
-        controller: 'formController'
+        controller: 'mapController'
     })
         .otherwise({
         redirectTo: '/home'
@@ -68,23 +68,17 @@ app.controller('mapController', ['$scope', function ($scope) {
         },
         zoom: 14
     };
+    
+    $scope.draggable = {
+        options: {
+            draggable: true
+        }
+    };
 
     $scope.marker = {
         center: {
             latitude: 42.10574380000001,
             longitude: -70.74849940000001
         }
-    };
-
-    $scope.infowindow = new google.maps.InfoWindow();
-
-    $scope.show = false;
-
-    $scope.showWindow = function() {
-       if ($scope.marker) {
-           $scope.show = true;
-       } else {
-           $scope.show = false;
-       }
     };
 }]);
