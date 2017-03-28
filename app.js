@@ -3,32 +3,31 @@ app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         .when('/home', {
         templateUrl: 'partials/home.html',
-        controller: 'detailsController'
+        controller: 'navCtrl'
     })
         .when('/focus', {
         templateUrl: 'partials/focus.html',
-        controller: 'chargesController'
+        controller: 'navCtrl'
     })
         .when('/team', {
         templateUrl: 'partials/team.html',
-        controller: 'chargesController'
+        controller: 'navCtrl'
     })
         .when('/jen', {
         templateUrl: 'partials/jen.html',
-        controller: 'chargesController'
-
+        controller: 'navCtrl'
     })
         .when('/services', {
         templateUrl: 'partials/services.html',
-        controller: 'earningsController'
+        controller: 'navCtrl'
     })
         .when('/approach', {
         templateUrl: 'partials/approach.html',
-        controller: 'serviceController'
+        controller: 'navCtrl'
     })
         .when('/form', {
         templateUrl: 'partials/form.html',
-        controller: 'mapController'
+        controller: 'navCtrl', 
     })
         .otherwise({
         redirectTo: '/home'
@@ -57,22 +56,14 @@ app.controller('navCtrl', ['$scope', function ($scope, $location) {
             $scope.show = false;
         });
 };
-}]);
-
-app.controller('mapController', ['$scope', function ($scope) {
-    $scope.map = {
+    
+     $scope.map = {
         control: {},
         center: {
             latitude: 42.10574380000001,
             longitude: -70.74849940000001
         },
         zoom: 14
-    };
-    
-    $scope.draggable = {
-        options: {
-            draggable: true
-        }
     };
 
     $scope.marker = {

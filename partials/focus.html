@@ -1,4 +1,16 @@
 <div class="main2">
+    <div class="mobile-menu">
+         <button class="menu" name="myButton" ng-click="showMenu(); show=!show"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
+         <div ng-show="show">
+            <ul class="navlinks-mobile">
+               <button class="menu-overlay" name="myButton" ng-click="showMenu(); show=!show"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
+                <a href="#/home" ng-click="showMenu(); show=!show"><li class="home-link">Home</li></a>
+                <a href="#/focus" ng-click="showMenu(); show=!show"><li>Our Team</li></a>
+                <a href="#/services" ng-click="showMenu(); show=!show"><li>Services</li></a>
+                <a href="#/form" ng-click="showMenu(); show=!show"><li>Contact Us</li></a>
+            </ul>
+        </div>
+      </div>
     <div class="sidemenu">
       <ul class="side-options">
           <a href="#/focus"><li>Focus and Clients</li></a>

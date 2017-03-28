@@ -1,6 +1,17 @@
 
 <div class="main">
-
+ <div class="mobile-menu">
+         <button class="menu" name="myButton" ng-click="showMenu(); show=!show"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
+         <div ng-show="show">
+            <ul class="navlinks-mobile">
+               <button class="menu-overlay" name="myButton" ng-click="showMenu(); show=!show"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
+                <a href="#/home" ng-click="showMenu(); show=!show"><li class="home-link">Home</li></a>
+                <a href="#/focus" ng-click="showMenu(); show=!show"><li>Our Team</li></a>
+                <a href="#/services" ng-click="showMenu(); show=!show"><li>Services</li></a>
+                <a href="#/form" ng-click="showMenu(); show=!show"><li>Contact Us</li></a>
+            </ul>
+        </div>
+      </div>
 <h1 class="title2">Contact Us</h1>
 
     <form action="mailer.php" method="post">
@@ -27,7 +38,7 @@
      <div class="contact-info2">
         <ul class="nav nav-pills nav-stacked">
             <li>769 Plain Street, Suite M, Marshfield, MA 02050</li>
-            <li class="number"><i class="fa fa-phone fa-1x fa-fw" aria-hidden="true"></i>781.834.6656</li>
+            <li class="number"><i class="fa fa-phone fa-1x fa-fw" aria-hidden="true"></i><a href="tel:7818346656">781.834.6656</a></li>
             <li class="number"><i class="fa fa-fax fa-1x fa-fw" aria-hidden="true"></i>781.780.5663</li>
         </ul>
     </div>
