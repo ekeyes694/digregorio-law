@@ -25,6 +25,10 @@ app.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'partials/approach.html',
         controller: 'navCtrl'
     })
+        .when('/links', {
+        templateUrl: 'partials/links.html',
+        controller: 'navCtrl', 
+    })
         .when('/form', {
         templateUrl: 'partials/form.html',
         controller: 'navCtrl', 
