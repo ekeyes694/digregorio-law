@@ -39,7 +39,7 @@ Header
 }
 .name ul{
     list-style: none;
-    color: #93a8e2;
+    color: #6b81ba;
 }
 .name-title{
     font-size: 52px;
@@ -52,7 +52,7 @@ Header
 }
 
 .number{
-    color: #93a8e2;
+    color: #6b81ba;
 }
 
 .icons li {
@@ -144,8 +144,8 @@ a {
 .navigation li:hover {
     text-decoration: underline;
     background-color: dimgray;
-    text-decoration-color: #93a8e2;
-    color: #93a8e2;
+    text-decoration-color: #6b81ba;
+    color: #6b81ba;
 }
 .navigation li .attorneys {
     padding: 0;
@@ -174,12 +174,12 @@ a {
 }
 .navigation li .attorneys li:hover {
     background: dimgray;
-    color: #93a8e2;
+    color: #6b81ba;
 }
 .navigation li:hover .attorneys {
     display: block;
     opacity: 1;
-    color: #93a8e2;
+    color: #6b81ba;
     visibility: visible;
 }
 .navlinks {
@@ -197,7 +197,7 @@ a {
 #timeline-body{
     width: 80%;
     background-color: #fff;
-    color: #93a8e2;
+    color: #6b81ba;
     padding: 1em;
     margin-left: auto;
     margin-right: auto;
@@ -222,7 +222,7 @@ a {
 
 .title2{
     margin-left: 2.5em;
-    color: #93a8e2;
+    color: #6b81ba;
 }
 
 .date {
@@ -305,7 +305,7 @@ label {
     transform: translateX(42px);
 }
 .radio:checked + .relative .circle {
-    background: #93a8e2;
+    background: #6b81ba;
 }
 .radio:checked ~ .content {
     max-height: 213px;
@@ -328,7 +328,7 @@ label {
 }
 
 .our-approach {
-    color: #93a8e2;
+    color: #6b81ba;
     margin-left: 4.5em;
 }
 .our-approach:hover {
@@ -357,7 +357,7 @@ home
     margin-left: 1.4em;
 }
 .about{
-    background-color: #93a8e2;
+    background-color: #6b81ba;
 }
 
 .approach{
@@ -389,7 +389,7 @@ home
 .quote {
     z-index: 1;
     width: 59%;
-    color: #93a8e2;
+    color: #6b81ba;
     margin-left: 12em;
     margin-top: 4em;
     font-size: 31px;
@@ -404,9 +404,7 @@ home
     text-indent: 4em;
     line-height: .5em;
 }
-.line3{
-    line-height: .5em;
-}
+
 .subtext{
     margin-left: 17.5em;
     font-size: 21px;
@@ -439,6 +437,22 @@ jen
     padding: 1em;
 }
 
+.elaine, .meri {
+    float: left;
+    width: 215px;
+    height: 215px;
+    margin-left: 2em;
+    padding: 1em;
+}
+
+.group-shot {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 6em;
+    width: 500px;
+    height: 300px;
+}
+
 .team-info {
     color: #666;
 }
@@ -449,7 +463,7 @@ jen
     margin-top: 5.5em;
     margin-left: 2em;
     padding-bottom: 13em;
-    border-right: thin solid #93a8e2;
+    border-right: thin solid #6b81ba;
 }
 
 .side-options {
@@ -459,7 +473,7 @@ jen
 
 .side-options li {
     padding: 1em;
-    color: #93a8e2;
+    color: #6b81ba;
 }
 
 .side-options li:hover {
@@ -467,7 +481,7 @@ jen
 }
 
 .focus-titles, contact-titles {
-    color: #93a8e2;
+    color: #6b81ba;
 }
 .info {
     width: 70%;
@@ -487,17 +501,16 @@ jen
     width: 70%;
     margin-left: 21em;
     color: #666;
-    border-left: thin solid #93a8e2;
+    border-left: thin solid #6b81ba;
 }
 
 .our-team-info2 {
-    margin-left: 3em;
     color: #666;
 }
 
 .our-team-focus-titles {
     margin-left: 1.5em;
-    color: #93a8e2;
+    color: #6b81ba;
 }
 /*--------------------------------------
 form
@@ -528,7 +541,7 @@ form {
 .contact-us {
    width: 54%;
    margin-left: 29em;
-   border-left: thin solid #93a8e2;
+   border-left: thin solid #6b81ba;
  }
 .contact-info2 li{
     list-style: none;
@@ -554,7 +567,7 @@ form {
     color: #666;
 }
 .contact-titles {
-    color: #93a8e2;
+    color: #6b81ba;
 }
 /*---------------------------------------
 map
@@ -570,6 +583,9 @@ map
 * ------------------------------------- */
 
 @media only screen and (min-width: 320px) {
+    body {
+        overflow-x: hidden;
+    }
     .social {
         width: 100%;
         padding: 0em;
@@ -714,7 +730,8 @@ map
         padding-bottom: 1em;
     }
     .our-team-info2 {
-        width: 95%
+        width: 95%;
+        margin-left: 3em;
     }
     .services {
         padding-bottom: 1em;
@@ -773,13 +790,19 @@ map
         margin-left: 1em;
         border-left: none;
     }
+    .contact-titles {
+        margin-left: 1em;
+    }
+    location-info {
+        margin-left: 2em;
+    }
     .contact-info2 {
         width: 100%;
         font-size: 16px;
         margin-right: 0em;
     }
     .angular-google-map-container {
-        width: 290px;
+        width: 273px;
     }
 }
 @media only screen and (min-width: 375px) {
@@ -876,7 +899,7 @@ map
         width: 100%;
     }
     .about, .goal, .approach {
-        width: 87%;
+        width: 100%;
         font-size: 13px;
         padding: 1em;
         padding-bottom: 4em;
@@ -891,9 +914,9 @@ map
         width: 90%;
         font-size: 13px;
         margin-top: 0em;
-        margin-left: 0em;
+        margin-left: 2em;
         padding-bottom: 0em;
-        border-left: none;
+        border-right: none;
     }
     .side-options {
         list-style: none;
@@ -992,13 +1015,13 @@ map
         margin-right: 0em;
     }
     .angular-google-map-container {
-        width: 290px;
+        width: 330px;
     }
 }
 
 @media only screen and (min-width: 425px) {
     .name {
-        margin-left: .5em;
+        margin-left: 1.5em;
     }
     .title2 {
         font-size: 1.3em;
@@ -1010,10 +1033,46 @@ map
         width: 65%;
     }
     .angular-google-map-container {
-        width: 340px;
+        width: 380px;
     }
 }
-
+@media only screen and (min-width: 500px) {
+    .name {
+        margin-left: 2.5em;
+    }
+    .info {
+        margin-left: 6em;
+        width: 83%;
+    }
+    .our-team-focus-titles {
+        margin-left: 4em;
+    }
+    .meri, .elaine {
+        margin-left: 8em;
+    }
+    .our-team-info2 {
+        width: 79%;
+        margin-left: 6em;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .name {
+        margin-left: 4em;
+    }
+    .sidemenu {
+        margin-left: 7em;
+    }
+    .info {
+        width: 69%;
+        margin-left: 9.5em;
+    }
+    .elaine, .meri {
+        margin-left: 10em;
+    }
+    .our-team-info2 {
+        margin-left: 8em;
+    }
+}
 @media only screen and (min-width: 768px) {
     .social {
     width: 100%;
@@ -1025,11 +1084,11 @@ map
     float: left;
     font-size: 10px;
     margin-left: 1em;
-    margin-top: 3em;
+    margin-top: 2em;
 }
 .name ul{
     list-style: none;
-    color: #93a8e2;
+    color: #6b81ba;
 }
 .name-title{
     font-size: 25px;
@@ -1046,7 +1105,7 @@ map
 }
 
 .number{
-    color: #93a8e2;
+    color: #6b81ba;
 }
 
 .icons li {
@@ -1078,7 +1137,7 @@ map
     color: #fff;
     font-size: 12px;
     width: 32%;
-    margin-right: 9em;
+    margin-right: 0em;
     float: right;
     margin-top: 0em;
     font-family: serif;
@@ -1098,25 +1157,34 @@ map
         font-size: 18px;
     }
     .line1 {
-        text-indent: 28.7em;
-    margin-top: 4em;
+        text-indent: 21.7em;
+        margin-top: 4em;
    }
     .line2 {
-            text-indent: 20em;
+        text-indent: 20em;
     }
-    .line3 {
-        text-indent: 16em;
+    .subtext {
+        margin-left: 8em;
     }
     .sections {
-        width: 96%;
+        width: 100%;
     }
     .sidemenu {
         width: 100%;
         font-size: 20px;
+        margin-left: 4em;
+    }
+    .info {
+        margin-left: 8em;
+        width: 96%;
     }
     .our-team-sidemenu {
         width: 100%;
         font-size: 20px;
+        margin-left: 4em;
+    }
+    .our-team-info2 {
+        width: 93%;
     }
     .radio:checked ~ .content {
         width: 85%;
@@ -1136,7 +1204,68 @@ map
         height: 190px;
     }
 }
-
+@media only screen and (min-width: 876px) {
+    .contact-info {
+        width: 28%;
+    }
+    .about, .goal, .approach {
+        font-size: 15px;
+    }
+    .line1 {
+        text-indent: 25.7em;
+    }
+    .line2 {
+        text-indent: 24em;
+    }
+    .subtext {
+        margin-left: 29.5em;
+    }
+    .our-team-info {
+        width: 83%;
+    }
+    #timeline p {
+        font-size 12px;
+    }
+    .contact-us {
+        margin-left: 8em;
+    }
+}
+@media only screen and (min-width: 940px) {
+    .quote {
+        font-size: 20px;
+    }
+    .our-team-info {
+        width: 78%;
+    }
+} 
+@media only screen and (min-width: 999px) {
+    .sidemenu {
+        margin-left: 10em;
+    }
+    .our-team-sidemenu {
+        margin-left: 10em;
+    }
+    .our-team-info {
+        width: 73%;
+    }
+    .contact-info2 {
+        margin-right: -7em;
+    }
+    }
+    .angular-google-map {
+        margin-left: 7em;
+    }
+} 
+@media only screen and (min-width: 1005px) {
+    .our-team-info {
+        width: 72%;
+    }
+}
+@media only screen and (min-width: 1019px) {
+    .our-team-info {
+        width: 71%;
+    }
+}
 @media only screen and (min-width: 1024px) {
  body {
     margin: 0em;
@@ -1168,7 +1297,7 @@ Header
 }
 .name ul{
     list-style: none;
-    color: #93a8e2;
+    color: #6b81ba;
 }
 .name-title{
     font-size: 45px;
@@ -1185,7 +1314,7 @@ Header
 }
 
 .number{
-    color: #93a8e2;
+    color: #6b81ba;
 }
 
 .icons li {
@@ -1216,9 +1345,10 @@ Header
 .contact-info {
        color: #fff;
     font-size: 15px;
-    width: 20%;
+    width: 23%;
     float: right;
     margin-top: 5em;
+    margin-right: 6em;
     font-family: serif;
 }
 
@@ -1254,6 +1384,7 @@ Navigation
 /*-----------------------------*/
 .navigation {
     text-align: left;
+    margin-right: 5em;
     display: inline;
     list-style: none;
 }
@@ -1264,9 +1395,9 @@ a {
 .navigation li {
     font: bold 17px 'Raleway' sans-serif;
     display: inline-block;
-    margin-right: -4px;
+    margin-right: -38px;
     position: relative;
-    padding: 7px 56.2px;
+    padding: 7px 46.2px;
     cursor: pointer;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
@@ -1277,8 +1408,8 @@ a {
 .navigation li:hover {
     text-decoration: underline;
     background-color: dimgray;
-    text-decoration-color: #93a8e2;
-    color: #93a8e2;
+    text-decoration-color: #6b81ba;
+    color: #6b81ba;
 }
 .navigation li .attorneys {
     padding: 0;
@@ -1307,31 +1438,30 @@ a {
 }
 .navigation li .attorneys li:hover {
     background: dimgray;
-    color: #93a8e2;
+    color: #6b81ba;
 }
 .navigation li:hover .attorneys {
     display: block;
     opacity: 1;
-    color: #93a8e2;
+    color: #6b81ba;
     visibility: visible;
 }
 .navlinks {
     display: inline-block;
-    margin-left: 5.7em;
+    margin-left: 4.03em;
     margin-top: 1em;
     text-align: center;
-    width: 82.9%;
+    width: 88%;
     background-color: gray;
 }
-
 
 /* -------------------------------------
 * timeline
 * ------------------------------------- */
 #timeline-body{
-    width: 80%;
+    width: 85%;
     background-color: #fff;
-    color: #93a8e2;
+    color: #6b81ba;
     padding: 1em;
     margin-left: auto;
     margin-right: auto;
@@ -1357,7 +1487,7 @@ a {
 
 .title2{
     margin-left: 2.5em;
-    color: #93a8e2;
+    color: #6b81ba;
 }
 
 .date {
@@ -1441,7 +1571,7 @@ label {
     transform: translateX(42px);
 }
 .radio:checked + .relative .circle {
-    background: #93a8e2;
+    background: #6b81ba;
 }
 .radio:checked ~ .content {
     max-height: 340px;
@@ -1470,7 +1600,7 @@ label {
     font-size: 2em;
 }
 .our-approach {
-    color: #93a8e2;
+    color: #6b81ba;
     margin-left: 4.5em;
     font-size: 1.5em;
 }
@@ -1481,7 +1611,7 @@ label {
 home
 /*--------------------------------------*/
 .main1{
-    width: 80%;
+    width: 85%;
     background-color: #fff;
     color: #fcfdff;
     padding: 1em;
@@ -1495,12 +1625,12 @@ home
 }
 .sections {
     background-color: #fff;
-    width: 112%;
+    width: 142.5%;
     color: #fff;
     margin-left: -1em;
 }
 .about{
-    background-color: #93a8e2;
+    background-color: #6b81ba;
 }
 
 .approach{
@@ -1512,9 +1642,9 @@ home
 }
 .about, .goal, .approach{
     float: left;
-    width: 23.5%;
-    padding: 2.55em;
-    padding-bottom: 6em;
+    width: 20.4%;
+    padding: 1.56em;
+    padding-bottom: 6.4em;
     text-align: center;
 }
 
@@ -1532,28 +1662,25 @@ home
 .quote {
     z-index: 1;
     width: 59%;
-    color: #93a8e2;
+    color: #6b81ba;
     margin-left: 12em;
     margin-top: 4em;
-    font-size: 23px;
+    font-size: 24px;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
 }
 .line1{
-    text-indent: 26.7em;
+    text-indent: 13.7em;
     line-height: .5em;
 }
 .line2{
-    text-indent: 18em;
+    text-indent: 13em;
     line-height: .5em;
 }
-.line3{
-    text-indent: 14em;
-    line-height: .5em;
-}
+
 .subtext{
-    margin-left: 39.5em;
-    font-size: 15px;
+    margin-left: 30.5em;
+    font-size: 20px;
 }
 .summary {
     font-size: 12px;
@@ -1573,7 +1700,7 @@ home
 jen
 -----------------------------------------*/
 .main2 {
-    width: 80%;
+    width: 85%;
     background-color: #fff;
     color: #fcfdff;
     padding: 1em;
@@ -1593,6 +1720,11 @@ jen
     padding: 1em;
 }
 
+    .group-shot {
+        margin-left: 4.5em;
+        height: 250px;
+        width: 400px;
+    }
 .team-info {
     color: #666;
     width: 93%;
@@ -1605,7 +1737,7 @@ jen
     margin-top: 5.5em;
     margin-left: 2em;
     padding-bottom: 13em;
-    border-right: thin solid #93a8e2;
+    border-right: thin solid #6b81ba;
 }
 
 .side-options {
@@ -1616,7 +1748,7 @@ jen
 
 .side-options li {
     padding: 1em;
-    color: #93a8e2;
+    color: #6b81ba;
 }
 
 .side-options li:hover {
@@ -1624,7 +1756,7 @@ jen
 }
 
 .focus-titles, contact-titles {
-    color: #93a8e2;
+    color: #6b81ba;
 }
 .info {
     width: 70%;
@@ -1644,23 +1776,43 @@ jen
     width: 70%;
     margin-left: 14em;
     color: #666;
-    border-left: thin solid #93a8e2;
+    border-left: thin solid #6b81ba;
 }
 
 .our-team-info2 {
-    margin-left: 3em;
+    width: 60%;
+    margin-left: 19em;
     color: #666;
 }
 
 .our-team-focus-titles {
     margin-left: 1.5em;
-    color: #93a8e2;
+    color: #6b81ba;
 }
+    .meri, .elaine {
+        margin-left: 1em;
+    }
+/*--------------------------------------
+    links
+---------------------------------------*/
+     .help-links {
+        margin-left: 3em;
+    }
+    .help-links li {
+        color: #6b81ba;
+        list-style: none;
+        padding-top: .5em;
+        width: 40%;
+        font-size: 20px;
+    }
+    .help-links li:hover {
+        text-decoration: underline;
+    }
 /*--------------------------------------
 form
 ----------------------------------------*/
 .main{
-    width: 80%;
+    width: 85%;
     background-color: #fff;
     color: #fcfdff;
     padding: 1em;
@@ -1685,7 +1837,7 @@ form {
 .contact-us {
    width: 54%;
    margin-left: 22em;
-   border-left: thin solid #93a8e2;
+   border-left: thin solid #6b81ba;
  }
 .contact-info2 li{
     list-style: none;
@@ -1711,7 +1863,7 @@ form {
     color: #666;
 }
 .contact-titles {
-    color: #93a8e2;
+    color: #6b81ba;
 }
 /*---------------------------------------
 map
@@ -1723,50 +1875,215 @@ map
     margin-left: 2em;
 }
 }
-   
 
+@media only screen and (min-width: 1080px) {
+    .navlinks {
+        width: 87.8%;
+        margin-left: 4.33em;
+    }
+    .line1 {
+        text-indent: 15.7em;
+    }
+    .line2 {
+        text-indent: 14.5em;
+    }
+    .sections {
+        width: 143.4%;
+    }
+}
+@media only screen and (min-width: 1129px) {
+    .navlinks {
+        width: 87.8%;
+        margin-left: 4.5em;
+    }
+    .sections {
+        width: 141.1%;
+    }
+    .about, .goal, .approach {
+        width: 21%;
+        padding: 1.5em;
+        padding-bottom: 7.4em;
+    }
+    .summary {
+        width: 106%;
+    }
+}
+@media only screen and (min-width: 1179px) {
+    .navlinks {
+        width: 87.6%;
+        margin-left: 4.8em;
+    }
+    .navigation {
+        padding: 7px 66.2px;
+    }
+    .sections {
+            width: 141.1%;
+    }
+    .about, .goal, .approach {
+        width: 21.12%;
+    }
+    .summary {
+            font-size: 14px;
+            width: 104%;
+    }
+    contact-info2 {
+        width: 39%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .navlinks {
+        width: 87.5%;
+        margin-left: 4.89em;
+    }
+    .summary {
+        width: 102%;
+    }
+    .about, .goal, .approach {
+        width: 21.15%;
+    }
+    .our-team-info {
+        margin-left: 16em;
+    }
+}
+@media only screen and (min-width: 1240px) {
+    .navlinks {
+        width: 87.4%;
+        margin-left: 5.1em;
+    }
+    .line1 {
+        text-indent: 19.7em;
+
+    }
+    .line2 {
+        text-indent: 18.5em;
+    }
+    .subtext {
+        margin-left: 37.5em;
+    }
+    .about, .goal, .approach {
+        width: 21.24%;
+    }
+    .summary {
+        width: 99%;
+    }
+    .contact-info2 {
+        width: 38%;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .contact-info {
+        margin-right: 4em;
+    }
+    .navlinks {
+        width: 87.32%;
+        margin-left: 5.3em;
+    }
+    .about, .goal, .approach {
+        width: 21.3%;
+    }
+    .summary {
+        width: 95%;
+    }
+    .info {
+        margin-left: 20em;
+    }
+}
+@media only screen and (min-width: 1340px) {
+    .contact-info {
+        width: 22%;
+    }
+    .navlinks {
+        margin-left: 5.6em;
+    }
+    .about, .goal, .approach {
+        width: 21.42%;
+    }
+    .summary {
+        width: 90%;
+    }
+    .group-shot {
+        height: 320px;
+        width: 580px;
+    }
+    .contact-info2 {
+        width: 37%;
+    }
+}
 @media only screen and (min-width: 1366px) {
+    .name {
+        margin-left: 3.5em;
+    }
     .contact-info {
         width: 17%;
+        margin-right: 9em;
     }
     .navlinks {
         margin-left: 8em;
         width: 82.2%;
     }
+    .navlinks li {
+        padding: 7px 76.2px;
+    }
+    .main, .main1, .main2, #timeline-body {
+        width: 80%;
+    }
     .quote {
-        font-size: 26px;
+        font-size: 31px;
+        font-style: italic;
     }
     .line1 {
-        text-indent: 31.7em;
+        text-indent: 13.7em;
     }
-     .line2 {
-        text-indent: 23em;
-    }
-     .line3 {
-        text-indent: 19em;
+    .line2 {
+        text-indent: 12em;
     }
     .subtext {
         font-size: 20px;
+        margin-left: 40em;
     }
     .sections {
         width: 108%;
     }
     .about, .goal, .approach {
-        width: 25.5%;
+        width: 24.55%;
         padding: 2.79em;
         padding-bottom: 6em;
     }
     .summary {
         font-size: 14px;
+        width: 89%;
     }
     .info {
         margin-left: 20em;
+    }
+    .group-shot {
+        width: 500px;
+        height: 300px;
+        margin-left: 6em;
     }
     .our-team-side-menu {
         width: 21%;
     }
     .our-team-info {
         margin-left: 18em;
+        width: 67%;
+    }
+    .our-team-info2 {
+        width: 80%;
+        margin-left: 10em;
+    }
+    .help-links {
+        margin-left: 3em;
+    }
+    .help-links li {
+        color: #6b81ba;
+        list-style: none;
+        padding-top: .5em;
+        width: 40%;
+        font-size: 20px;
+    }
+    .help-links li:hover {
+        text-decoration: underline;
     }
     form {
         width: 27%;
@@ -1781,7 +2098,7 @@ map
     }
     .angular-google-map-container {
         width: 330px;
-        margin-left: 12em;
+        margin-left: 0em;
     }
 }
    
