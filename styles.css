@@ -638,7 +638,7 @@ map
        left: 0;
        top: 0;
        position: fixed;
-       z-index: 1;
+       z-index: 101;
        overflow-x: hidden;
        transition: 0.5s;
     }
@@ -686,6 +686,11 @@ map
         padding: 1em;
         padding-bottom: 4em;
     }
+    .read-more {
+        margin-top: .5em;
+        margin-left: 10em;
+        text-decoration: underline;
+}
     .main2 {
         width: 100%;
         padding-bottom: 1em;
@@ -803,6 +808,16 @@ map
     }
     .angular-google-map-container {
         width: 273px;
+    }
+}@media only screen and (min-width: 360px) {
+    .name {
+        margin-left: 0.7em;
+    }
+    #timeline li {
+        margin: 0px 0;
+    }
+    .angular-google-map {
+        margin-left: 0em;
     }
 }
 @media only screen and (min-width: 375px) {
@@ -1656,6 +1671,7 @@ home
     color: #fff;
 }
 .read-more {
+    margin-top: .5em;
     margin-left: 10em;
     text-decoration: underline;
 }
