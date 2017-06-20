@@ -790,6 +790,13 @@ map
         margin-bottom: 0em;
         padding-bottom: 2em;
     }
+    .help-links li {
+         color: #7b9cf2;
+        list-style: none;
+        padding-top: 1em;
+        width: 97%;
+        font-size: 14px;
+    }
     .contact-us {
         width: 73%;
         margin-left: 1em;
@@ -825,7 +832,7 @@ map
         width: 100%;
     }
     .name {
-        margin-left: 0em;
+        margin-left: 1em;
         margin-right: 0em;
         width: 100%;
     }
@@ -871,7 +878,6 @@ map
        left: 0;
        top: 0;
        position: fixed;
-       z-index: 1;
        overflow-x: hidden;
        transition: 0.5s;
     }
@@ -1268,7 +1274,7 @@ map
     }
     }
     .angular-google-map {
-        margin-left: 7em;
+       /** margin-left: 7em;**/
     }
 } 
 @media only screen and (min-width: 1005px) {
@@ -1626,8 +1632,7 @@ home
     text-align: center;
 }
 
-
-.about-image{
+.about-image {
     background-image: url(./images/stones.jpeg);
     background-position: left;
     background-repeat: no-repeat;
