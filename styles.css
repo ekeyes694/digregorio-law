@@ -224,6 +224,10 @@ a {
     margin-left: 2.5em;
     color: #7b9cf2;
 }
+.link-title {
+    margin-left: 2.5em;
+    color: #7b9cf2;
+}
 
 .date {
     margin-top: -10px;
@@ -725,7 +729,7 @@ map
         width: 100%;
         font-size: 13px;
         margin-top: 0em;
-        margin-left: 0em;
+        margin-left: 1em;
         padding-bottom: 0em;
     }
     .our-team-info {
@@ -738,10 +742,21 @@ map
         width: 95%;
         margin-left: 3em;
     }
+    .group-shot {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 0em;
+        width: 245px;
+        height: 152px;
+    }
     .services {
-        padding-bottom: 1em;
+        padding-bottom: 2em;
     }
     .title2 {
+        margin-left: .5em;
+        width: 97%;
+    }
+    .link-title {
         margin-left: 1em;
     }
     .our-approach {
@@ -819,6 +834,10 @@ map
 }@media only screen and (min-width: 360px) {
     .name {
         margin-left: 0.7em;
+    }
+    .group-shot {
+        width: 281px;
+        height: 180px;
     }
     #timeline li {
         margin: 0px 0;
@@ -933,9 +952,9 @@ map
     }
     .sidemenu {
         width: 90%;
-        font-size: 13px;
+        font-size: 14px;
         margin-top: 0em;
-        margin-left: 2em;
+        margin-left: 3em;
         padding-bottom: 0em;
         border-right: none;
     }
@@ -957,9 +976,9 @@ map
     }
     .our-team-sidemenu {
         width: 90%;
-        font-size: 13px;
+        font-size: 14px;
         margin-top: 0em;
-        margin-left: 0em;
+        margin-left: 3em;
         padding-bottom: 0em;
     }
     .our-team-info {
@@ -972,12 +991,16 @@ map
         width: 78%
     }
     .services {
-        padding-bottom: 1em;
+        padding-bottom: 3em;
         width: 84%;
+        margin-left: 1.5em;
     }
     .title2 {
+        margin-left: 0em;
+        font-size: 2em;
+    }
+    .link-title {
         margin-left: 1em;
-        font-size: 1.5em;
     }
     .our-approach {
         margin-left: 1.5em;
@@ -1018,6 +1041,7 @@ map
     }
     #timeline p {
         font-size: 11px;
+        margin-left: 1em;
     }
     .main {
         width: 100%;
@@ -1025,27 +1049,49 @@ map
         margin-bottom: 0em;
         padding-bottom: 2em;
     }
+    form {
+        width: 55%;
+        margin-left: 0em;
+    }
     .contact-us {
-        width: 69%;
+        width: 73%;
         margin-left: 1em;
         border-left: none;
+    }
+    contact-titles {
+        margin-left: 1em;
     }
     .contact-info2 {
         width: 100%;
         font-size: 16px;
         margin-right: 0em;
     }
+    .loaction-info {
+        width: 100%;
+    }
     .angular-google-map-container {
         width: 330px;
     }
 }
-
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 414px) {
     .name {
         margin-left: 1.5em;
     }
+    .group-shot {
+        width: 340px;
+        height: 190px;
+    }
+    .contact-us {
+        width: 71%;
+    }
+}
+@media only screen and (min-width: 425px) {
     .title2 {
-        font-size: 1.3em;
+        font-size: 2em;
+    }
+    .group-shot {
+        width: 350px;
+        height: 200px;
     }
     .menu {
         width: 100%;
@@ -1057,12 +1103,51 @@ map
         width: 380px;
     }
 }
+@media only screen and (min-width: 475px) {
+    .name {
+        margin-left: 2.5em;
+    }
+    .sidemenu {
+        font-size: 14px;
+        margin-left: 3em;
+    }   
+    .team-info {
+        width: 92%;
+    }
+    .group-shot {
+        width: 395px;
+        height: 220px;
+    }
+    .our-team-sidemenu {
+        font-size: 14px;
+        margin-left: 3em;
+    }
+    form {
+        margin-left: 0em;
+    }
+    .our-team-info2 {
+        width: 100%;
+    }
+    .title2 {
+        margin-left: 0.5em;
+    }
+    .contact-us {
+        width: 88%;
+    }
+    .contact-titles {
+        margin-left: 0em;
+    }
+    .location-info {
+        margin-left: 5em;
+        font-size: 14px;
+    }
+}
 @media only screen and (min-width: 500px) {
     .name {
         margin-left: 2.5em;
     }
     .info {
-        margin-left: 6em;
+        margin-left: 4em;
         width: 83%;
     }
     .our-team-focus-titles {
@@ -1073,7 +1158,10 @@ map
     }
     .our-team-info2 {
         width: 79%;
-        margin-left: 6em;
+        margin-left: 4em;
+    }
+    .group-shot {
+        width: 365px;
     }
 }
 @media only screen and (min-width: 600px) {
@@ -1085,7 +1173,7 @@ map
     }
     .info {
         width: 69%;
-        margin-left: 9.5em;
+        margin-left: 8.5em;
     }
     .elaine, .meri {
         margin-left: 10em;
@@ -1093,9 +1181,38 @@ map
     .our-team-info2 {
         margin-left: 8em;
     }
+    .sidemenu {
+        font-size: 17px;
+        margin-left: 4em;
+    }
+    .our-team-sidemenu {
+        font-size: 17px;
+        margin-left: 4em;
+    }
+}
+@media only screen and (min-width: 736px) {
+    .name {
+        margin-left: 6em;
+    }
+    .sidemenu {
+        margin-left: 7em;
+    }
+    .our-team-sidemenu {
+        margin-left: 7em;
+    }
+    .group-shot {
+        width: 450px;
+        height: 235px;
+    }
+    form {
+        width: 40%;
+    }
+    .contact-us {
+        width: 90%
+    }
 }
 @media only screen and (min-width: 768px) {
-    .social {
+.social {
     width: 100%;
     padding: 0em;
 }
@@ -1175,17 +1292,19 @@ map
     }
     .quote {
         display: inline;
-        font-size: 18px;
+        font-size: 20px;
+        font-style: italic;
     }
     .line1 {
-        text-indent: 21.7em;
+        text-indent: 17.7em;
         margin-top: 4em;
    }
     .line2 {
-        text-indent: 20em;
+        text-indent: 16em;
     }
     .subtext {
-        margin-left: 8em;
+        margin-left: 30em;
+        font-size: 18px;
     }
     .sections {
         width: 100%;
@@ -1193,25 +1312,36 @@ map
     .sidemenu {
         width: 100%;
         font-size: 20px;
-        margin-left: 4em;
+        margin-left: 5em;
     }
     .info {
-        margin-left: 8em;
+        margin-left: 4em;
         width: 96%;
     }
     .our-team-sidemenu {
         width: 100%;
         font-size: 20px;
-        margin-left: 4em;
+        margin-left: 6em;
+    }
+    .group-shot {
+        margin-left: 1em;
+        width: 615px;
+        height: 300px;
     }
     .our-team-info2 {
         width: 93%;
+    }
+    .title2 {
+        font-size: 2em;
+    }
+    #timeline p {
+        font-size: 12px;
     }
     .radio:checked ~ .content {
         width: 85%;
     }
     form {
-        width: 100%;
+        width: 35%;
     }
     .contact-us {
         width: 75%;
@@ -1230,33 +1360,47 @@ map
         width: 28%;
     }
     .about, .goal, .approach {
-        font-size: 15px;
+        font-size: 22px;
     }
     .line1 {
-        text-indent: 25.7em;
+        text-indent: 17.7em;
     }
     .line2 {
-        text-indent: 24em;
+        text-indent: 16em;
     }
     .subtext {
-        margin-left: 29.5em;
+        margin-left: 33.5em;
     }
     .our-team-info {
         width: 83%;
+    }
+    .group-shot {
+        margin-left: 4em;
+    }
+    .sidemenu {
+        margin-left: 9em;
+    }
+    .our-team-sidemenu {
+        margin-left: 9em;
     }
     #timeline p {
         font-size 12px;
     }
     .contact-us {
+        width: 84%;
         margin-left: 8em;
     }
 }
 @media only screen and (min-width: 940px) {
     .quote {
-        font-size: 20px;
+        font-size: 22px;
     }
     .our-team-info {
         width: 78%;
+    }
+    .group-shot {
+        width: 685px;
+        height: 365px;
     }
 } 
 @media only screen and (min-width: 999px) {
@@ -1269,14 +1413,14 @@ map
     .our-team-info {
         width: 73%;
     }
+    .group-shot {
+        margin-left: 6em;
+    }
     .contact-info2 {
         margin-right: -7em;
     }
-    }
-    .angular-google-map {
-       /** margin-left: 7em;**/
-    }
-} 
+  }
+  
 @media only screen and (min-width: 1005px) {
     .our-team-info {
         width: 72%;
@@ -1470,10 +1614,13 @@ a {
 }
 
 .title2{
-    margin-left: 2.5em;
+    margin-left: 0.5em;
     color: #7b9cf2;
 }
-
+    .link-title {
+        margin-left: 2.5em;
+        color: #7b9cf2;
+    }
 .date {
     margin-top: -10px;
     top: 50%;
