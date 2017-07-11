@@ -655,7 +655,14 @@ map
        padding-bottom: 35em;
     }
     .about-image {
+        background-image: url("./images/mini-stones.jpg");
         width: 100%;
+        background-position: left;
+        background-repeat: no-repeat;
+        height: 13.938rem;
+        margin-bottom: 0em;
+        margin-left: 0em;
+        overflow-x: hidden;
     }
     .quote {
         display: none;
@@ -672,9 +679,10 @@ map
         transition: all 0.2s;
     }
     .mobile-contact-info {
-        color: #fff;
-        font-size: 13px;
-        width: 18%;
+        display: block;
+        color: #7b9cf2;
+        font-size: 10px;
+        width: 50%;
         float: right;
         margin-top: 2em;
         font-family: serif;
@@ -914,25 +922,10 @@ map
     .quote {
         display: none;
     }
-    .mobile-contact-info li {
-        list-style: none;
-        margin-right: -13px;
-        position: relative;
-        padding: 5px 20px;
-        -webkit-transition: all 0.2s;
-        -moz-transition: all 0.2s;
-        -ms-transition: all 0.2s;
-        -o-transition: all 0.2s;
-        transition: all 0.2s;
-    }
     .mobile-contact-info {
-        color: #fff;
-        font-size: 13px;
-        width: 18%;
-        float: right;
-        margin-top: 2em;
-        font-family: serif;
-    }
+        width: 60%;
+        font-size: 12px;
+    }  
     
     .sections {
         margin-left: -1em;
@@ -1103,9 +1096,18 @@ map
         width: 380px;
     }
 }
+@media only screen and (min-width: 445px) {
+    .our-team-info2 {
+        width: 87%;
+    }
+}
 @media only screen and (min-width: 475px) {
     .name {
         margin-left: 2.5em;
+    }
+    .mobile-contact-info {
+        font-size: 14px;
+        width: 54%;
     }
     .sidemenu {
         font-size: 14px;
@@ -1164,9 +1166,19 @@ map
         width: 365px;
     }
 }
+@media only screen and (min-width: 552px) {
+    .our-team-info2 {
+        width: 86%;
+    }
+}
 @media only screen and (min-width: 600px) {
     .name {
         margin-left: 4em;
+    }
+    .mobile-contact-info {
+        font-size: 17px;
+        width: 48%;
+        margin-right: 4em;
     }
     .sidemenu {
         margin-left: 7em;
@@ -1193,6 +1205,14 @@ map
 @media only screen and (min-width: 736px) {
     .name {
         margin-left: 6em;
+    }
+    .about-image{
+        background-image: url("./images/medium-stones.jpg");
+        height: 19.938rem;
+    }
+    .mobile-contact-info {
+        font-size: 23px;
+        margin-right: 2em;
     }
     .sidemenu {
         margin-left: 7em;
@@ -1391,6 +1411,12 @@ map
         margin-left: 8em;
     }
 }
+@media only screen and (min-width: 935px) {
+    .contact-us {
+        width: 83%;
+        margin-left: 3em;
+    }
+}
 @media only screen and (min-width: 940px) {
     .quote {
         font-size: 22px;
@@ -1425,7 +1451,7 @@ map
     .our-team-info {
         width: 72%;
     }
-}
+} 
 @media only screen and (min-width: 1019px) {
     .our-team-info {
         width: 71%;
@@ -1777,6 +1803,7 @@ home
     padding: 1.56em;
     padding-bottom: 6.4em;
     text-align: center;
+    font-size: 15px;
 }
 
 .about-image {
