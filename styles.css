@@ -635,8 +635,9 @@ map
        list-style: none;
        color: #fff;
        width: 100%;
-       font-size: 45px;
-       padding-top: 1em;
+       font-size: 30px;
+       padding-top: 4em;
+       padding-left: 2.4em;
        margin-top: 0em;
        height: 100%;
        left: 0;
@@ -696,7 +697,7 @@ map
         width: 100%;
         font-size: 13px;
         padding: 1em;
-        padding-bottom: 4em;
+        padding-bottom: 1em;
     }
     .read-more {
         margin-top: .5em;
@@ -777,7 +778,7 @@ map
         padding-bottom: 1em;
     }
     #timeline {
-        margin: 50px 0px 30px 64px;
+        margin: 30px 0px 30px 64px;
     }
     .circle {
         top: 52%;
@@ -898,8 +899,8 @@ map
        list-style: none;
        color: #fff;
        width: 100%;
-       font-size: 45px;
-       padding-top: 1em;
+       font-size: 32px;
+       padding-top: 5em;
        margin-top: 0em;
        height: 100%;
        left: 0;
@@ -935,7 +936,6 @@ map
         width: 100%;
         font-size: 13px;
         padding: 1em;
-        padding-bottom: 4em;
     }
     .main2 {
         width: 100%;
@@ -994,6 +994,7 @@ map
     }
     .link-title {
         margin-left: 1em;
+        margin-top: 2em;
     }
     .our-approach {
         margin-left: 1.5em;
@@ -1005,10 +1006,10 @@ map
         padding-bottom: 1em;
     }
     #timeline {
-        margin: 50px 0px 30px 64px;
+        margin: 20px 0px 30px 64px;
     }
     .circle {
-        top: 52%;
+        top: 51.5%;
         left: -85px;
         width: 4px;
         height: 4px;
@@ -1108,6 +1109,9 @@ map
     .mobile-contact-info {
         font-size: 14px;
         width: 54%;
+    }
+    .navlinks-mobile {
+        padding-left: 4em;
     }
     .sidemenu {
         font-size: 14px;
@@ -1213,6 +1217,10 @@ map
     .mobile-contact-info {
         font-size: 23px;
         margin-right: 2em;
+    }
+    .mobile-navilnks{
+        font-size: 35px;
+        padding-left: 8em;
     }
     .sidemenu {
         margin-left: 7em;
@@ -1379,8 +1387,11 @@ map
     .contact-info {
         width: 28%;
     }
+    .navlinks-mobile {
+        padding-left: 9em;
+    }
     .about, .goal, .approach {
-        font-size: 22px;
+        font-size: 16px;
     }
     .line1 {
         text-indent: 17.7em;
@@ -1627,7 +1638,7 @@ a {
 
 #timeline {
     list-style: none;
-    margin: 50px 0 30px 47px;
+    margin: 20px 0 30px 47px;
     padding-left: 30px;
 }
 #timeline li {
@@ -1647,14 +1658,14 @@ a {
         margin-left: 2.5em;
         color: #7b9cf2;
     }
-.date {
+/*.date {
     margin-top: -10px;
     top: 50%;
     left: -202px;
     font-size: 0.95em;
     line-height: 20px;
     position: absolute;
-}
+}*/
 
 .circle {
     margin-top: -10px;
@@ -1677,6 +1688,7 @@ a {
     border-style: solid;
     border-radius: 0.5em;
     position: relative;
+    transition: transform 0.2s linear;
 }
 .content:before, .content:after {
     content: "";
@@ -1710,12 +1722,12 @@ a {
 }
 
 label {
-    font-size: 1.6em;
+    font-size: 1.2em;
     margin-left: 0em;
     position: absolute;
     z-index: 100;
     cursor: pointer;
-    top: 18px;
+    top: 24px;
     transition: transform 0.2s linear;
 }
 
@@ -1743,27 +1755,10 @@ label {
     color: #595b5b;
     transition: color 0.3s linear 0.3s;
 }
-    .services {
-        width: 100%;
-    }
-.service-info {
-    color: #666;
-    width: 85%;
-    font-size: 16px;
-    margin-left: auto;
-    margin-right: auto;
-}
 .title2 {
     font-size: 2em;
 }
-.our-approach {
-    color: #7b9cf2;
-    margin-left: 4.5em;
-    font-size: 1.5em;
-}
-.our-approach:hover {
-    text-decoration: underline;
-}
+
 /*--------------------------------------
 home
 /*--------------------------------------*/
@@ -1801,7 +1796,7 @@ home
     float: left;
     width: 20.4%;
     padding: 1.56em;
-    padding-bottom: 6.4em;
+    padding-bottom: 7.4em;
     text-align: center;
     font-size: 15px;
 }
@@ -2060,7 +2055,7 @@ map
     .about, .goal, .approach {
         width: 21%;
         padding: 1.5em;
-        padding-bottom: 7.4em;
+        padding-bottom: 8.4em;
     }
     .summary {
         width: 106%;
@@ -2214,6 +2209,9 @@ map
     .info {
         margin-left: 20em;
     }
+    .team-info {
+        font-size: 16px;
+    }
     .group-shot {
         width: 500px;
         height: 300px;
@@ -2259,4 +2257,104 @@ map
         margin-left: 0em;
     }
 }
-   
+@media only screen and (min-width: 1440px) {
+    .navlinks {
+        margin-left: 8.6em;
+        width: 82.03%;
+    }
+    .sections {
+        width: 106%;
+    }
+    .about, .goal, .approach {
+        width: 25.4%;
+    }
+    .angular-google-map-container {
+        margin-left: 17em;
+    }
+}
+@media only screen and (min-width: 1680px) {
+    .navlinks {
+        margin-left: 10.2em;
+        width: 81.8%;
+}
+    .quote {
+        font-size: 35px;
+    }
+    .sections {
+        width: 109%;
+    }
+    .about, .goal, .approach {
+        width: 25.55%;
+        padding-bottom: 5em;
+    }
+    .summary {
+        font-size: 16px;
+    }
+    .info {
+        margin-left: 25em;
+    }
+    .group-shot {
+        width: 700px;
+        height: 400px;
+    }
+    .our-team-info {
+        padding-bottom: 9em;
+    }
+    .our-team-focus-titles {
+        margin-top: 3em;
+    }
+    .our-team-info2 {
+        width: 85%;
+    }
+    #timeline p {
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .name {
+        margin-left: 5.5em;
+    }
+    .contact-info {
+        width: 15%;
+        margin-right: 12em;
+    }
+    .navlinks {
+        margin-left: 11.8em;
+        width: 81.56%;
+    }
+    .about-image {
+        height: 34.938rem;
+    }
+    .quote {
+        font-size: 42px;
+    }
+    .subtext {
+        font-size: 30px;
+        margin-left: 35em;
+    }
+    .sections {
+        width: 103%;
+    }
+    .about, .goal, .approach {
+        width: 27.7%;
+    }
+    .summary {
+        font-size: 17px;
+        width: 85%;
+    }
+    .info {
+        margin-left: 29em;
+    }
+    .our-team-sidemenu {
+        width: 16%;
+    }
+    .our-team-info {
+        margin-left: 18em;
+        width: 80%;
+    }
+    .our-team-info2 {
+        font-size: 20px;
+        width: 79%;
+        margin-left: 10em;
+    }
+}
